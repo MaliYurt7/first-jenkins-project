@@ -1,0 +1,25 @@
+{
+  "name": "playwright-automation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "tests": "npx playwright test",
+    "tests:specific": "npx playwright test --grep example.spec.js",
+    "tests:specific1": "npx playwright test --grep playwright-with-ai.spec.js",
+    "tests:specific2": "npx playwright test --grep playwrightPractice.spec.js",
+    "tests:specificAllTestGroup": "npx playwright test --grep testGroupsPractice.spec.js",
+    "tests:specificOneOfTheTestGroupwithTag": "npx playwright test --grep @smoke",
+    "tests:specificOneOfTheTestWithinGroupwithTag": "npx playwright test --grep @sanity",
+    "tests:Authorization": "npx playwright test --grep sepLogin.spec.js",
+    "tests:Authorization1": "npx playwright test --grep @SEP login thru",
+    "report": "npx playwright show-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.47.2",
+    "@types/node": "^22.7.4"
+  }
+}
