@@ -69,3 +69,4 @@ test.describe("Locator Object Methods", () => {
     console.log(await inputBox.inputValue());
   });
 });
+// github deneme
