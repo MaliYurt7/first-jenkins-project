@@ -12,6 +12,7 @@
     "tests:specificOneOfTheTestWithinGroupwithTag": "npx playwright test --grep @sanity",
     "tests:Authorization": "npx playwright test --grep sepLogin.spec.js",
     "tests:Authorization1": "npx playwright test --grep @SEP login thru",
+    "tests:locatorObjectMethods": "npx playwright test --grep locatorObjectMethods.spec.js",
     "report": "npx playwright show-report"
   },
   "keywords": [],

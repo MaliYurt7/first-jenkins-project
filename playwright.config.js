@@ -43,7 +43,7 @@ module.exports = defineConfig({
     /*
       headless:false ==> show browser while test runs
     */
-    headless: true,
+    headless: false,
   },
 
   /* Configure projects for major browsers (enabling the browsers for the testing perspective)*/

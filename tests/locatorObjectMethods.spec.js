@@ -33,12 +33,12 @@ test.describe("Locator Object Methods", () => {
     // wait for 3 seconds
     // select by visible text
     //simpleDropdown.selectOption("Option 1");
-    simpleDropdown.selectOption({ label: "Option 1" });
+    await simpleDropdown.selectOption({ label: "Option 1" });
     // select by value
-    simpleDropdown.selectOption("2");
+    await simpleDropdown.selectOption("2");
 
     // select by index
-    simpleDropdown.selectOption({ index: 1 });
+    await simpleDropdown.selectOption({ index: 1 });
   });
 
   //Creating empty test
@@ -60,9 +60,10 @@ test.describe("Locator Object Methods", () => {
 
     let inputsLink = page.getByText("Inputs");
     //  await inputsLink.scrollIntoViewIfNeeded();
-    //    await inputsLink.click();
+    await inputsLink.click();
 
     let inputBox = page.locator("//input[@type='number']");
+    // await page.waitForTimeout(300000);
     await inputBox.click();
     await inputBox.fill("222");
 
